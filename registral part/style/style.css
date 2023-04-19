@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.title {
+    position: relative;
+    left: 65em;
+    bottom: 58em;
+
+}
+
+.title__h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+}
+
+
+:root {
+    --primary: #11998e;
+    --secondary: #38ef7d;
+    --white: black;
+    --gray: #9b9b9b;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 30%;
+    left: 55em;
+    bottom: 55em;
+}
+
+.form__field {
+    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--gray);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--white);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin: 30px 0;
+}
+
+.form__label {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    /* color: var(--gray); */
+}
+
+.bi-eye-slash {
+    position: relative;
+    left: 27em;
+    bottom: 3.5rem;
+    cursor: pointer;
+}
+
+.change__pass a {
+    text-decoration: none;
+    position: relative;
+    left: 15em;
+    bottom: 2.5rem;
+    color: gray;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    transition: 0.3s;
+}
+
+.change__pass a:hover {
+    color:#FF7500;
+}
+
+
+.btn {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 24em;
+    height: 2em;
+    color: white;
+    background: #FF7500;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.allow__circle {
+    position: relative;
+    top: 30px;
+    width: 680px;
+}
+
+.input__txt {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+
+.hr__bar {
+    display: flex;
+    position: relative;
+    top: 2em;
+    left: 5em;
+    padding: 10px;
+    margin: 10px;
+}
+
+.line {
+    border-bottom: 3px solid #FF7500;
+    width: 7em;
+    position: relative;
+    bottom: 10px;
+    margin: 0 15px;
+
+
+}
+
+span {
+    color:#FF7500;
+}
+
+.buttons {
+    position: relative;
+    top: 2em;
+    left: 2em;
+}
+
+.button {
+    cursor: pointer;
+    width: 85px;
+    height: 28px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #0D5C63;
+    width: 187px;
+    height: 48px;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+    margin: 15px;
+    border: 1px solid #FF7500;
+}
+
+.btn__image {
+    position: relative;
+    top: 5px;
+    right: 4px;
+}

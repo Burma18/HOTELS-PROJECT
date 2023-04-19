@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #FF7500;
+}
+
+.hotel__logo {
+    width: 90px;
+    margin: 20px 0 5px 40px;
+}
+
+.btn {
+    width: 10em;
+    height: 2em;
+    font-family: 'Montserrat' serif;
+    background: #FF7500;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    margin-top: 40px;
+    margin-right: 120px;
+}

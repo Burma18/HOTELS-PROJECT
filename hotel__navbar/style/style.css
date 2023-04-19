@@ -1,0 +1,56 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    left: 24em;
+}
+
+.nav__link{
+
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 21px;
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s
+}
+
+.nav__link:hover {
+    color: #FF7500;
+}
+
+.logo{
+    width: 90px;
+}
+
+.account__page{
+  width: 60px;
+}
+
+
+.hotengine-shop-select-language-box { display:inline-block; width:71px; height:30px; overflow:hidden; border:none; background:#fff; line-height:30px; position:relative; top: 15px; z-index:1000; }
+  .hotengine-shop-select-language { display:inline-block; width:71px; text-align:center;  }
+  .hotengine-shop-select-language-values { display:inline-block; width:69px; vertical-align: top; position:absolute; background:rgba(255, 255, 255, 0.80); left:2px; }
+  .hotengine-shop-select-language-box:hover{ overflow:visible;}
+  .hotengine-shop-select-language-values:hover .hotengine-shop-select-language-val{ position:relative; }
+  .hotengine-shop-select-language-val { width:39px; display:block; margin:0px; padding: 0px 17px; vertical-align:top; cursor:pointer; margin-left:-3px; text-align:center; }
+  .hotengine-shop-select-language-val:hover {background:#e8e8e8;}
