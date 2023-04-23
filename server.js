@@ -1,21 +1,34 @@
 const express = require("express");
 const app = express();
-const signupRouter = require("./Auth/signup");
-const signinRouter = require("./Auth/signin");
-const getToken = require("./Auth/getToken");
-const authenticateToken = require("./Auth/authFunc");
-const signupGetViews = require("./routes/signupForm");
+const cookieParser = require("cookie-parser");
+const mongoose = require("mongoose");
+const { requireAuth, checkUser } = require("./middleware/authMiddleware");
 
-const port = process.env.PORT;
+const authRoutes = require("./routes/authRoutes");
 
 app.use(express.json());
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.use(express.static("public"));
+app.use(cookieParser());
 
-app.use("/signup", signupRouter);
-app.use("/signin", signinRouter);
-app.use("/token", getToken);
-app.use("/signup", signupGetViews);
+app.use(authRoutes);
+
+const mongodbURI =
+  "mongodb+srv://sam:sam123@nodeexpressproject.eotjdr9.mongodb.net/node-auth";
+
+mongoose
+  .connect(mongodbURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((result) => console.log("connected to db"))
+  .catch((err) => console.log("error from db is :", err));
+
+app.get("/", checkUser, (req, res) => {
+  res.render("home");
+});
+
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => console.log("listening on port :", port));

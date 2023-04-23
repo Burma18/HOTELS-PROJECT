@@ -1,3 +1,5 @@
+/* HOME PAGE */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,17 +19,22 @@ body {
 .navbar {
   display: flex;
   position: relative;
-  left: 24em;
+  left: 18em;
 }
 
 .nav__link {
   font-weight: 500;
   line-height: 20px;
-  font-size: 18px;
+  font-size: 21px;
   text-decoration: none;
   margin: 20px;
   color: black;
   font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: #ff7500;
 }
 
 .logo {
@@ -82,4 +89,258 @@ body {
 }
 .hotengine-shop-select-language-val:hover {
   background: #e8e8e8;
+}
+
+/* SINGIN CSS */
+.signinBody {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.title {
+  position: relative;
+  left: 65em;
+  bottom: 58em;
+}
+
+.title__h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000000;
+}
+
+:root {
+  --primary: #11998e;
+  --secondary: #38ef7d;
+  --white: black;
+  --gray: #9b9b9b;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 30%;
+  left: 55em;
+  bottom: 55em;
+}
+
+.form__field {
+  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--gray);
+  outline: 0;
+  font-size: 1.3rem;
+  color: var(--white);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin: 30px 0;
+}
+
+.form__label {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  /* color: var(--gray); */
+}
+
+.bi-eye-slash {
+  position: relative;
+  left: 27em;
+  bottom: 3.5rem;
+  cursor: pointer;
+}
+
+.change__pass a {
+  text-decoration: none;
+  position: relative;
+  left: 15em;
+  bottom: 2.5rem;
+  color: gray;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  transition: 0.3s;
+}
+
+.change__pass a:hover {
+  color: #ff7500;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  width: 24em;
+  height: 2em;
+  color: white;
+  background: #ff7500;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.allow__circle {
+  position: relative;
+  top: 30px;
+  width: 680px;
+}
+
+.input__txt {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+}
+
+.hr__bar {
+  display: flex;
+  position: relative;
+  top: 2em;
+  left: 5em;
+  padding: 10px;
+  margin: 10px;
+}
+
+.line {
+  border-bottom: 3px solid #ff7500;
+  width: 7em;
+  position: relative;
+  bottom: 10px;
+  margin: 0 15px;
+}
+
+span {
+  color: #ff7500;
+}
+
+.buttons {
+  position: relative;
+  top: 2em;
+  left: 2em;
+}
+
+.button {
+  cursor: pointer;
+  width: 85px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #0d5c63;
+  width: 187px;
+  height: 48px;
+  border-radius: 3px;
+  background: none;
+  margin-top: 20px;
+  margin: 15px;
+  border: 1px solid #ff7500;
+}
+
+.btn__image {
+  position: relative;
+  top: 5px;
+  right: 4px;
+}
+
+/* SIGNUP CSS */
+
+.signupBody {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__containerSignIp {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ff7500;
+}
+
+.hotel__logo {
+  width: 90px;
+  margin: 20px 0 5px 40px;
+}
+
+.btn-signup {
+  width: 10em;
+  height: 2em;
+  font-family: "Montserrat" serif;
+  background: #ff7500;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  margin-top: 40px;
+  margin-right: 120px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-family: "Montserrat", serif;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-family: "Montserrat", serif;
+}
+
+.username {
+  font-family: "Montserrat", serif;
+  margin-right: 165px;
+}
+
+.email {
+  font-family: "Montserrat", serif;
+  margin-right: 140px;
+}
+
+.password {
+  font-family: "Montserrat", serif;
+  margin-right: 170px;
+}
+
+input[type="submit"] {
+  background-color: #ff7500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff7500;
 }
